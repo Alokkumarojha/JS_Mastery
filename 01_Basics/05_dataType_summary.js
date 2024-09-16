@@ -6,10 +6,10 @@ let scoreValue = 100.4
 let isLoggedIn = false;
 let outSideTemp = null
 let userEmail; // value is undefind
-
+console.log(typeof outSideTemp) // data type of null is object  
 /* Symbols are often used to create unique property keys for objects,
  ensuring that these keys do not conflict with other property keys, even if they have the same name.*/
-const sym1 = Symbol();
+const sym1 = Symbol();   
 const sym2 = Symbol("foo");
 const sym3 = Symbol("foo");
 
@@ -49,7 +49,7 @@ let myFunction = function()  {
     myId: "4",
   }
 //   console.log(myObject);
-
+console.log(typeof myObject)
 
 /* In the example above, the variable data changes its type from a number to a string,
  which is possible because JavaScript is dynamically typed.*/
@@ -57,3 +57,4 @@ let myFunction = function()  {
  let data = 89;
  data = "hello";
  
+
