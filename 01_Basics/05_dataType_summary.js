@@ -49,7 +49,7 @@ let myFunction = function()  {
     myId: "4",
   }
 //   console.log(myObject);
-console.log(typeof myObject)
+// console.log(typeof myObject)
 
 /* In the example above, the variable data changes its type from a number to a string,
  which is possible because JavaScript is dynamically typed.*/
@@ -57,4 +57,25 @@ console.log(typeof myObject)
  let data = 89;
  data = "hello";
  
+//*********************************************Memory******************************************************
+// There are 2 types of Memory 
+// Stack &  heap
+/* in primitive data type use stack memory and .It works on the principle of Last In, First Out (LIFO),
+ meaning the last item added to the stack is the first one to be removed. copy type return*/ 
 
+
+//While objects are stored in the heap (refrence type uses Heap memory) refrence return
+    
+
+let myExample = "Hellow India";
+let yourExample = myExample
+  yourExample = "hellow HInd";
+
+  // console.log(myExample)
+  // console.log(yourExample)
+
+ 
+  let user1 =function() {
+    let result = a+b
+  }
+  console.log(result);
