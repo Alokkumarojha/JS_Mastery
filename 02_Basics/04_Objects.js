@@ -36,11 +36,19 @@ const user = [
         email: "fghjk@jkl;"
     }
 ]
-user[1].email
-console.log(tinderUser);
-console.log(Object.keys(tinderUser))  // we can fetch keys of object
-console.log(Object.values(tinderUser))  // we fetch value also.
-console.log(Object.entries(tinderUser)) //Return an array of keys/value.
-console.log(tinderUser.hasOwnProperty("isLoggedIn")) // we cam check property key defind or not return true/false
+// user[1].email
+// console.log(tinderUser);
+// console.log(Object.keys(tinderUser))  // we can fetch keys of object
+// console.log(Object.values(tinderUser))  // we fetch value also.
+// console.log(Object.entries(tinderUser)) //Return an array of keys/value.
+// console.log(tinderUser.hasOwnProperty("isLoggedIn")) // we cam check property key defind or not return true/false
 
+const cource = {
+    CousrceName: "javaScript",
+    Price: 999,
+    instructorName: "hitesh chaudhary",
+}
 
+const {Price: p} = cource // destructuring  /// we can also change the property name 
+// console.log(cource.CousrceName) // directly print
+console.log(p)
