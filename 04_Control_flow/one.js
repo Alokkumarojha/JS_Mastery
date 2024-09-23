@@ -41,7 +41,7 @@ if (true) {}  // agar true hai to to iske ander ka code render hoga false hai to
 
 // let isLoggedIn = true
 // let devidcard =true 
-// if (isLoggedIn && devidcard && 2==2 & 2!=3) {  // the code will be rendered when the condition is true.
+// if (isLoggedIn && devidcard && 2==2 & 2!=3) {  // the code will be rendered when the condition is true. all the codition must be true
 //     console.log("allow to logged in ")
 // }else{
 //     console.log(" Don't allow to logged in ")
@@ -50,7 +50,7 @@ if (true) {}  // agar true hai to to iske ander ka code render hoga false hai to
 let googleLoggedin = true
 let emailLoggedin = false
 let guistLoggedin =true
-if (googleLoggedin || emailLoggedin || guistLoggedin) {
+if (googleLoggedin || emailLoggedin || guistLoggedin) {  // at list one condition must be true.
      
     console.log("logged In succsessfull")
 }
