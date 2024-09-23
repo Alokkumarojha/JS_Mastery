@@ -39,13 +39,23 @@ if (true) {}  // agar true hai to to iske ander ka code render hoga false hai to
 //     console.log("Balance above 1000");
 // }
 
-let isLoggedIn = true
-let devidcard =true 
-if (isLoggedIn && devidcard && 2==2 & 2!=3) {  // When 
-    console.log("allow to logged in ")
-}else{
-    console.log(" Don't allow to logged in ")
+// let isLoggedIn = true
+// let devidcard =true 
+// if (isLoggedIn && devidcard && 2==2 & 2!=3) {  // the code will be rendered when the condition is true.
+//     console.log("allow to logged in ")
+// }else{
+//     console.log(" Don't allow to logged in ")
+//}
+
+let googleLoggedin = true
+let emailLoggedin = false
+let guistLoggedin =true
+if (googleLoggedin || emailLoggedin || guistLoggedin) {
+     
+    console.log("logged In succsessfull")
 }
+
+
 
 
 
