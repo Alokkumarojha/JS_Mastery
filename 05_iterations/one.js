@@ -50,7 +50,7 @@ for (let index = 1; index < 20; index++) {
 for (let index = 1; index < 20; index++) {
     if(index == 5) {
         console.log(`Detucted ${index}`)
-        continue // condition ko ek bar ke liye skeep karta hai 
+        continue // condition ko ek bar ke liye skeep karta hai  
     }
    console.log(index);
 }
