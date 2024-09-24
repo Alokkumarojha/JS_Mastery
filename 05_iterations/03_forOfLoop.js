@@ -26,7 +26,18 @@ Map1.set("UK", "United kingdom")
 Map1.set("USA", "United state of america")
 // console.log(Map1);
 
-for (const [key , value] of Map1) {
-    console.log(key, ":-" , value);
+for (const [key , value] of Map1) {  // Array ke uper only forOf loop use hoga 
+    // console.log(key, ":-" , value);
     
+}
+
+const myObject = {
+    js: "javaScript",
+    cpp: "C++",
+    java: "Java",
+    Python: "Python",
+}
+for (const key in myObject) {   // Object ke upper ham for in loop use hota hai .
+   console.log(`${key} shortcut is for ${myObject[key]}`);
+   
 }
