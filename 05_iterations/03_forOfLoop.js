@@ -26,7 +26,7 @@ Map1.set("UK", "United kingdom")
 Map1.set("USA", "United state of america")
 // console.log(Map1);
 
-for (const [key , value] of Map1) {  // Array ke uper only forOf loop use hoga 
+for (const [key , value] of Map1) {  // map ke uper only forin loop use hoga .. iteratable nahi hai
     // console.log(key, ":-" , value);
     
 }
@@ -38,6 +38,12 @@ const myObject = {
     Python: "Python",
 }
 for (const key in myObject) {   // Object ke upper ham for in loop use hota hai .
-   console.log(`${key} shortcut is for ${myObject[key]}`);
+//    console.log(`${key} shortcut is for ${myObject[key]}`);
    
+}
+ 
+const programing = ["java","javascript", "c","c++","swift"]
+for (const key in programing) {
+    console.log(programing[key]);
+    
 }
