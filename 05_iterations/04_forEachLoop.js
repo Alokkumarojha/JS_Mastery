@@ -42,4 +42,6 @@ myCoading.forEach((items)=>{
     // console.log(items.languageFileName)
 })
 
-
+let number = [1,2,3,4,5,6,7,8,9,]
+const newNumber = number.forEach((items)=> {return items + 10})
+console.log(newNumber)
