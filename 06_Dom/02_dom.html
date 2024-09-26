@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body style="background-color: #212121; color: #fff">
+    <div class="parent">
+      // div node after that line breck is also child node.
+      <div class="day">Sunday</div>
+      <div class="day">Monday</div>
+      <div class="day">Tusday</div>
+      <div class="day">Wednesday</div>
+    </div>
+  </body>
+  <script>
+    const parent = document.querySelector(".parent");
+    // console.log(parent.children[3]);
+    // for (let i = 0; i < parent.children.length; i++) {
+    //   console.log(parent.children[i].innerHTML);
+    // }
+    //parent.children[2].style.color = "red"; // we can select index of array by using[2]
+    //console.log((parent.firstElementChild.style.color = "Blue")); // we can select first element of child
+    // console.log((parent.lastElementChild.style.color = "yellow")); // we also select last element.
+    const childToParent = document.querySelector(".day");
+    //console.log(childToParent);
+    //console.log(childToParent.parentElement); // we can move child to parent.
+    //console.log(childToParent.nextElementSibling); // also move to next sibling.
+    // console.log(childToParent.previousElementSibling);
+    console.log("NODES: ", parent.childNodes); // total child node is 9 , div.node and line breck is also a child node..
+  </script>
+</html>
