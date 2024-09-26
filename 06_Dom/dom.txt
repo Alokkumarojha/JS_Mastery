@@ -1,0 +1,30 @@
+document.getElementById("title") =>  
+document.getElementById("title").id
+document.getElementById("title").className
+document.getElementById("title").getAttribute("id") key pass karne par value milega
+document.getElementById("title").getAttribute("class") key pass karne par value milega
+document.getElementById("title").setAttribute("class","title") class add ho jayega or override krega.
+document.getElementById("title").setAttribute("class","title heading") // previous attribute override nahi hoga.
+const title =document.getElementById("title") store kar saktey hai variable ke ander..
+title // accessble hai 
+title.style.backgroundColor = "Green" // we can change background color using style 
+title.style.padding = "10px" // we can apply all css.
+
+// How to add content
+diffrence beetween ...
+title.textContent // text content me sab ke sab value mil jati hai jo hidden hai waah bhi.
+title.innerHTML // yah pura HTML ka value deta hai html tags ko bhi support karta hai.
+title.innerText // jo actual me visible hai wah text select hoga.
+
+document.querySelector("h1") page ka jo first h1 hoga wah select ho jay ga.
+document.querySelector("#title") ye lagbhag css tags ki tarah hota hai jaise id select karna ho to #idName dekar select kar saktey hai
+document.querySelector(".heading")  // class ko select karne ke liye.
+document.querySelector('input[type="password"]') //
+document.querySelector("ul")
+const mylist = document.querySelector("ul")
+mylist.querySelector("li")
+const turnGreen = mylist.querySelector("li")
+turnGreen.style.backgroundColor = "Green"  // all css can apply 
+
+turnGreen.innerText
+turnGreen.innerText = "Five"  //we can change value.

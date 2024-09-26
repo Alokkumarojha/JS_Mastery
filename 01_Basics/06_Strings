@@ -1,0 +1,39 @@
+const name = "alokKumarOjha"
+const repoCount = 50
+
+//console.log (`Hellow my name is ${name}  my repo count is ${repoCount}`)
+
+const gameName = new String("alokKumarOjha")
+//console.log(gameName[4]) //check key value of 4TH key 
+//console.log (gameName.__proto__) // check prototype 
+//console.log(gameName.length) // check length of string
+//console.log(gameName.toLowerCase()) // string change to lowercase.
+//console.log(gameName.toUpperCase()) // conver string to uppercase.but original val never change becouse of its store in heap memory , return referance type.
+//console.log(gameName.charAt([3])) // use to return of the charactor at the specific index in a string
+//console.log(gameName.indexOf("k")) // use index of to find subcharator position
+
+let anchorTag = name.anchor("section1")
+//console.log(anchorTag) //used to create an HTML <a> (anchor) element
+
+let Fruit= ["apple","Mango","Banana"]
+//console.log (Fruit.at(2)) // use to access an element at specific position
+
+let number = 123;
+let str = String(number)
+//console.log(str)  // use to convert a value to a string.
+//console.log (typeof(str)) // use to check the value 
+
+let str1 = ("this is a hp")
+//console.log(str1.substring(0,4)) // used to extract a portion of a string between two specified indices.
+
+
+let str2 = (    "remove extra whitespaces"      )
+let trimedStr = (str2.trim())
+//console.log(trimedStr) // use to remove extraspaces from both end of a string.
+
+let url = "http/www.alo.kkumar.%#30ojha.com"
+//let newUrl = url.replace("%#30","_")
+//console.log(newUrl); //we can replace string
+console.log(url.includes("alok")) //we can check true or fales value 
+
+console.log (url.split("."))
