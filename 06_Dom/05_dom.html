@@ -8,7 +8,20 @@
   <div>
     <h1 class="heading">i am learning javascript</h1>
   </div>
-  <body style="background-color: #212121; color: #fff"></body>
+  <body style="background-color: #212121; color: #fff">
+    <ul id="list">
+      <li>Item 1</li>
+      <li>Item 2</li>
+    </ul>
+    <button id="hoverBtn" onclick="addItem()">Add Item</button>
+    <button id="hoverBtn" onclick="DeletItem()">Delet Item</button>
+
+    <button type="button" onclick="DisplayDateTime()">
+      Click me to display Date and Time.
+    </button>
+
+    <p id="demo"></p>
+  </body>
   <script>
     function addLanguag(langName) {
       const h1 = document.createElement("h1");
@@ -16,5 +29,23 @@
       document.querySelector(".heading").appendChild(h1);
     }
     addLanguag("i am learning DOM");
+
+    function addItem() {
+      const newItem = document.createElement("li");
+      newItem.appendChild(document.createTextNode("New Item"));
+      document.querySelector("#list").appendChild(newItem);
+    }
+    function DeletItem() {
+      const removeItem = document.querySelector("li:last-child");
+      removeItem.remove();
+    }
+    const buttonHover = document.querySelector("#hoverBtn");
+    buttonHover.addEventListener("mouseover", function () {
+      buttonHover.textContent = "Click here";
+    });
+
+    function DisplayDateTime() {
+      document.querySelector("#demo").innerHTML = Date();
+    }
   </script>
 </html>
