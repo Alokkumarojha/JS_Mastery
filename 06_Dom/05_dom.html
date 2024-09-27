@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>dom5</title>
+  </head>
+  <div>
+    <h1 class="heading">i am learning javascript</h1>
+  </div>
+  <body style="background-color: #212121; color: #fff"></body>
+  <script>
+    function addLanguag(langName) {
+      const h1 = document.createElement("h1");
+      h1.appendChild(document.createTextNode(langName));
+      document.querySelector(".heading").appendChild(h1);
+    }
+    addLanguag("i am learning DOM");
+  </script>
+</html>

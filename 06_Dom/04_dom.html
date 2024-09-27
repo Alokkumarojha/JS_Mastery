@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dom4</title>
+  </head>
+  <body style="background-color: #212121; color: #fff">
+    <li class="language">javaScript</li>
+  </body>
+  <script>
+    function addLanguage(langName) {
+      // this is the basic way use in basic project. in this method again and again tree taverse
+      const li = document.createElement("li"); // create a list item.
+      li.innerHTML = `${langName}`;
+      document.querySelector(".language").appendChild(li);
+    }
+    addLanguage("Python");
+    addLanguage("Java");
+    addLanguage("css");
+
+    function addOptiLanguage(langName) {
+      // this is the optimize way .
+      const li = document.createElement("li");
+      li.appendChild(document.createTextNode(langName));
+      document.querySelector(".language").appendChild(li);
+    }
+    addOptiLanguage("ruby");
+
+    // how to edit value
+    const secondLang = document.querySelector("li:nth-child(2)");
+    // secondLang.innerHTML = "mojo";
+    const li = document.createElement("li");
+    li.textContent = "mojo";
+    secondLang.replaceWith(li);
+
+    // second method -- some issue
+    const seconMethodToEdit = document.querySelector("li:nth-child(4)");
+    seconMethodToEdit.outerHTML = "<li>TypeScript</li>";
+
+    // remove
+
+    const lastLang = document.querySelector("li:nth-child(3)");
+    lastLang.remove();
+  </script>
+</html>
