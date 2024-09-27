@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM Manipulation</title>
+  </head>
+  <body style="background-color: #212121; color: #fff"></body>
+  <script>
+    const myDev = document.createElement("div"); // we can create HTML tags.
+    console.log(myDev);
+    myDev.className = "main";
+    myDev.id = "myId";
+    myDev.id = Math.floor(Math.random() * 10 + 1); // insert a random id.
+    myDev.setAttribute("title", "This is the title");
+    myDev.style.backgroundColor = "Green";
+    // myDev.innerText = "I am learning DOM Manipulation";
+    const addText = document.createTextNode("I am learning Dom Manipulation.");
+    myDev.appendChild(addText);
+    document.body.appendChild(myDev); // add value in the body..
+  </script>
+</html>
