@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Events</title>
+  </head>
+  <body style="display: flex; background-color: #414141">
+    <h2>Amazing Images</h2>
+    <div>
+      <ul>
+        <li>
+          <img
+            width="200px"
+            id="monkey"
+            src="https://images.pexels.com/photos/26712791/pexels-photo-26712791/free-photo-of-monkey-on-a-tree-branch.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            alt=""
+          />
+        </li>
+        <li>
+          <img
+            width="200px"
+            id="tree"
+            src="https://images.pexels.com/photos/28297576/pexels-photo-28297576/free-photo-of-a-forest-with-many-trees-and-grass.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            alt=""
+          />
+        </li>
+        <li>
+          <img
+            width="200px"
+            id="house"
+            src="https://images.pexels.com/photos/20302681/pexels-photo-20302681/free-photo-of-wooden-sheds-in-snow-in-winter.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            alt=""
+          />
+        </li>
+        <li>
+          <img
+            width="200px"
+            id="coffe"
+            src="https://images.pexels.com/photos/2299028/pexels-photo-2299028.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            alt=""
+          />
+        </li>
+        <li>
+          <img
+            onclick="alert('this is sea water')"
+            width="200px"
+            id="water"
+            src="https://images.pexels.com/photos/13347675/pexels-photo-13347675.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            alt=""
+          />
+        </li>
+        <li>
+          <a style="color: #fff" id="google" href="https://www.google.com/"
+            >Link to google</a
+          >
+        </li>
+      </ul>
+    </div>
+  </body>
+  <script>
+    // document.querySelector("#water").onclick(function () {
+    //   alert("this is a water");
+    // });
+
+    // document.querySelector("#coffe").addEventListener(
+    // this is the best approch.
+    //   "click",
+    //  function () {
+    //  alert("House clicked");
+    //  },
+    false;
+    // ); // by default false hota hai
+
+    document.getElementById("coffe").addEventListener("click", function (e) {
+      //event object milta hai
+      console.log(e);
+    });
+  </script>
+</html>
+<!-- avoid using onclick on html use allwage addEventListener. event se
+propogation ki ability milti hai. onclick featur kam milta hai. -->
