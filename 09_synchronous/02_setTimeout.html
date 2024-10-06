@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>syncronous</title>
+  </head>
+  <body>
+    <h1>Learning setTimeout</h1>
+    <button id="stop">stop</button>
+  </body>
+  <script>
+    // setTimeout(function () {  // use to introduce delay and and time outs in code.
+    //   console.log("My name is Alok kumar ojha");
+    // }, 2000); // spacific delay in milliseconds.
+
+    const namePrint = function () {
+      console.log("My name is Alok kumar ojha");
+    };
+    const setText = function () {
+      document.querySelector("h1").innerHTML = "I am learning JS by Hitesh sir";
+    };
+    const stopTimeout = setTimeout(setText, 2000);
+
+    document.querySelector("#stop").addEventListener("click", function () {
+      clearTimeout(stopTimeout);
+      console.log("STOP TimeOut");
+    });
+  </script>
+</html>

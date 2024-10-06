@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>setInterval</title>
+  </head>
+  <body>
+    <h1>I am learning setInterval Method</h1>
+    <p id="demo"></p>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+  </body>
+  <script>
+    let randomId;
+    const addName = function () {
+      if (randomId == null) {
+        randomId = setInterval(randomNum, 1000);
+      }
+    };
+    const stopPrintname = function () {
+      clearInterval(randomId);
+      randomId = null;
+    };
+
+    document.querySelector("#start").addEventListener("click", addName);
+    document.querySelector("#stop").addEventListener("click", stopPrintname);
+
+    const randomNum = function () {
+      document.querySelector("p").innerHTML = Math.floor(Math.random() * 100);
+    };
+  </script>
+</html>
