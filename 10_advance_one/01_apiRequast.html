@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* Flexbox styling for the main div */
+      .main {
+        display: flex;
+        flex-direction: column; /* Align items vertically */
+        align-items: center; /* Center items horizontally */
+        justify-content: center; /* Center items vertically */
+        background-color: #333;
+        padding: 20px;
+        margin: 20px;
+        border-radius: 10px;
+        height: 350px; /* Optional: Set height */
+      }
+      .main img {
+        border-radius: 50%;
+        margin-bottom: 10px;
+        width: 150px;
+      }
+      .main h2 {
+        color: #fff;
+        margin: 0;
+      }
+      .main p {
+        margin-top: 10px; /* Space above total repos */
+      }
+    </style>
+  </head>
+  <body
+    style="background-color: #212121; color: #fff; font-family: sans-serif"
+  ></body>
+  <script>
+    let myGithubapiUrl = "https://api.github.com/users/Alokkumarojha";
+    const xhr = new XMLHttpRequest();
+    xhr.open("GET", myGithubapiUrl);
+    xhr.onreadystatechange = function () {
+      console.log(xhr.readyState);
+      if (xhr.readyState === 4) {
+        const data = JSON.parse(this.responseText);
+
+        console.log(data.avatar_url);
+        const myDiv = document.createElement("div");
+        myDiv.className = "main";
+        const img = document.createElement("img");
+        img.src = data.avatar_url;
+        img.alt = "avtar_images";
+        // img.style.width = "300px";
+
+        const name = document.createElement("h2");
+        name.textContent = data.name || "Name is not available";
+
+        const totalRepo = document.createElement("p");
+        totalRepo.innerHTML = `Total Repositories: ${data.public_repos}`;
+
+        myDiv.appendChild(img);
+        myDiv.appendChild(name);
+        myDiv.appendChild(totalRepo);
+        document.body.appendChild(myDiv);
+      }
+    };
+
+    xhr.send();
+  </script>
+</html>
