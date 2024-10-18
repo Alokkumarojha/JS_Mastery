@@ -7,13 +7,31 @@
     <link rel="stylesheet" href="quiz.css" />
   </head>
   <body>
-    <div class="quiz-container">
-      <h1>Quiz Game</h1>
-      <div id="quiz">
-        <!-- Quiz questions will be dynamically inserted here -->
+    <div class="container">
+      <h2 class="head">Quiz app</h2>
+      <div class="quiz">
+        <h2 id="qusn"></h2>
       </div>
-      <button id="submit-btn">Submit Quiz</button>
-      <div id="result"></div>
+      <div>
+        <input type="radio" id="ans1" class="option" name="option" />
+        <label id="opt1"></label>
+      </div>
+      <div>
+        <input type="radio" id="ans2" class="option" name="option" />
+        <label id="opt2"></label>
+      </div>
+      <div>
+        <input type="radio" id="ans3" class="option" name="option" />
+        <label id="opt3"></label>
+      </div>
+      <div>
+        <input type="radio" id="ans4" class="option" name="option" />
+        <label id="opt4"></label>
+      </div>
+      <div class="btn">
+        <h2 class="myScore"></h2>
+        <button onclick="next()" id="nextbtn">Next</button>
+      </div>
     </div>
 
     <script src="quiz.js"></script>
